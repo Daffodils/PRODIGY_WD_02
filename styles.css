@@ -1,0 +1,156 @@
+body {  
+    display: flex;  
+    justify-content: center;  
+    align-items: center;  
+    height: 100vh;  
+    background-color: #f0f0f0;  
+    font-family: Arial, sans-serif;
+    transition: background-color 0.3s;  
+}  
+
+.stopwatch {  
+    background: white;  
+    border-radius: 10px;  
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);  
+    padding: 20px;  
+    text-align: center;  
+    transition: background 0.3s;
+}  
+
+
+
+.dark-mode {  
+    background-color: #121212;  
+    color: white;  
+}  
+
+.dark-mode .display {  
+    border-color: #BB86FC;  
+    background: #1F1F1F;  
+}  
+
+.dark-mode .controls button {  
+    background-color: #BB86FC;  
+}  
+
+.dark-mode .controls button:hover {  
+    background-color: #3700B3;  
+}  
+
+.lap {  
+    transition: background 0.3s;  
+} 
+
+.display {  
+    font-size: 2em;  
+    margin-bottom: 20px;  
+    padding: 10px;  
+    border: 2px solid #007BFF;  
+    border-radius: 5px;  
+    background: #e7f3ff;  
+}  
+
+.controls button {  
+    margin: 5px;  
+    padding: 10px 15px;  
+    border: none;  
+    border-radius: 5px;  
+    background-color: #007BFF;  
+    color: white;  
+    font-size: 1em;  
+    cursor: pointer;  
+    transition: background-color 0.3s;  
+}  
+
+.controls button:hover {  
+    background-color: #0056b3;  
+}  
+
+.laps {  
+    margin-top: 20px;  
+    text-align: left;  
+}  
+
+.lap {  
+    padding: 5px;  
+    border-bottom: 1px solid #ddd;  
+}
+
+/* Toggle switch styles */  
+.toggle-switch {  
+    position: relative;  
+    display: inline-block;  
+    width: 60px;  
+    height: 34px;  
+    margin-bottom: 20px; /* Add some space below the toggle */  
+}  
+
+.toggle-switch input {  
+    opacity: 0;  
+    width: 0;  
+    height: 0;  
+}  
+
+.slider {  
+    position: absolute;  
+    cursor: pointer;  
+    top: 0;  
+    left: 0;  
+    right: 0;  
+    bottom: 0;  
+    background-color: #ccc;  
+    transition: .4s;  
+    border-radius: 34px; /* Rounded borders */  
+}  
+
+.slider:before {  
+    position: absolute;  
+    content: "";  
+    height: 26px;  
+    width: 26px;  
+    left: 4px;  
+    bottom: 4px;  
+    background-color: white;  
+    transition: .4s;  
+    border-radius: 50%; /* Circular knob */  
+}  
+
+/* When the toggle is checked, set the background color and move the knob */  
+input:checked + .slider {  
+    background-color: #60a062;  
+}  
+
+input:checked + .slider:before {  
+    transform: translateX(26px);  
+}  
+
+/* Dark mode styles */  
+body {  
+    transition: background-color 0.3s;  
+}  
+
+.stopwatch {  
+    transition: background 0.3s;  
+}  
+
+.dark-mode {  
+    background-color: #121212;  
+    color: white;  
+}  
+
+.dark-mode .display {  
+    border-color: #BB86FC;  
+    background: #1F1F1F;  
+}  
+
+.dark-mode .controls button {  
+    background-color: #BB86FC;  
+}  
+
+.dark-mode .controls button:hover {  
+    background-color: #3700B3;  
+}  
+
+.lap {  
+    transition: background 0.3s;  
+}
